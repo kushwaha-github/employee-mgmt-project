@@ -29,7 +29,7 @@ public class HomeController {
 		
 		return ResponseEntity.ok(iEmployeesService.getEmployeeByEmpId(id));
 	}
-	
+	//This method will pull all employees from database.
 	@GetMapping(EmpConstant.GET_ALL_EMPLOYEES)
 	public ResponseEntity<?> getAllEmployeesDetails(){
 		return ResponseEntity.ok(iEmployeesService.GetAllEmployees());

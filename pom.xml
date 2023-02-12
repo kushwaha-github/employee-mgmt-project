@@ -15,7 +15,7 @@
 	<name>employee-mgmt-project</name>
 	<description>Employee mgmt project using oracle hr database</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
