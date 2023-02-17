@@ -18,6 +18,7 @@ public class EmployeesServiceImpl implements IEmployeesService {
 	public Employees getEmployeeByEmpId(int id) {
 		
 		System.out.println("***********Service**********  "+id);
+		System.out.println(iEmployees.findByEmployeeId(id).toString());
 		
 		return iEmployees.findByEmployeeId(id);
 	}

@@ -26,8 +26,9 @@ public class HomeController {
 	public ResponseEntity<?> getEmployeeDetails(@PathVariable int id){
 		
 		System.out.println("***********Controller********** : "+id);
+		System.out.println("C"+iEmployeesService.getEmployeeByEmpId(id).toString());
 		
-		return ResponseEntity.ok(iEmployeesService.getEmployeeByEmpId(id));
+		return ResponseEntity.ok(iEmployeesService.getEmployeeByEmpId(id).toString());
 	}
 	//This method will pull all employees from database.
 	@GetMapping(EmpConstant.GET_ALL_EMPLOYEES)
